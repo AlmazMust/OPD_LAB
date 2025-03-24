@@ -2,7 +2,7 @@ from telegram import Update
 from telegram.ext import ApplicationBuilder, CommandHandler, ContextTypes, MessageHandler, filters
 import random
 
-API_TOKEN = 'TOKEN'  
+API_TOKEN = 'Token'
 
 async def start(update: Update, context: ContextTypes.DEFAULT_TYPE) -> None:
     await update.message.reply_text("Я загадал число от 1 до 1000. Попробуй угадать!")
